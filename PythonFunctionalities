@@ -1,0 +1,165 @@
+# A simple functions
+
+  def return_mail_id(fname,lname):
+   maild_id = fname + '.' + lname + '@gmail.com'
+   return maild_id
+
+
+>>> return_mail_id('john','doe')
+'john.doe@gmail.com'
+>>>
+
+
+#Trying all functionalities
+
+Variables
+1.Create 2 variables with x as 100 & y as 10 respectively and find the Multiplication and division of both and store in some val as z and z1.
+>>> x=100
+>>> y=10
+>>> z=x*y
+>>> z
+1000
+>>> z1=x/y
+>>> z1
+10.0
+>>>
+
+2.Create a as 2000 and find the division of a by y (created in step 1) and reassign a with the divided result (200).
+>>> a=2000
+>>> a=a/y
+>>> a
+200.0
+
+3.Prove Python is Dynamically Typed Language: Create x:int=100, then assign the x to y, but the datatype of y has to be of type string. (think about using some function like str()). Print the type of y and x
+>>> x=100
+>>> type(x)
+<class 'int'>
+>>> y=str(x)
+>>> type(y)
+<class 'str'>
+>>> y
+'100'
+
+4. Prove Python has dynamic inference feature 
+
+>>> a = 100
+>>> print(type(a))
+<class 'int'>
+>>> a = 'hello'
+>>> print(type(a))
+<class 'str'>
+>>>
+
+5. Prove Python is Strongly Typed Language
+
+>>> bob = 1
+>>> print(type(bob))
+<class 'int'>
+>>> bob = "bob"
+>>> print(type(bob))
+<class 'str'>
+
+6. Create variables a,b,c,d assigned with 10,20,30,40 respectively
+
+>>> a = 10;b=20;c=30;d=40
+>>> a
+10
+>>> b
+20
+>>> c
+30
+>>> d
+40
+>>>
+
+7. Prove Python variables are case sensitive
+>>> A=100
+>>> a
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+
+8. Prove variable name can’t start with numbers or cannot contains special character other than _
+
+>>> *ki = 990
+  File "<stdin>", line 1
+SyntaxError: starred assignment target must be in a list or tuple
+>>> @orak = "list"
+  File "<stdin>", line 1
+    @orak = "list"
+          ^
+SyntaxError: invalid syntax
+>>> 123 = "Hello"
+  File "<stdin>", line 1
+SyntaxError: can't assign to literal
+>>>
+
+>>> _msg_ = "Hello"
+>>> print(_msg_)
+Hello
+
+>>>
+
+9. Show some examples of when do we use single, double and triple (single/double) quotes
+>>> singlequote = 'Hello'
+>>> print(singlequote)
+Hello
+>>> doubtlequote = "Hello"
+>>> print(doubtlequote)
+Hello
+>>> name = " 'Inceptez!' "
+>>> print (name)
+ 'Inceptez!'
+
+>>> a = '''this is the message
+... to the Inceptez.
+... '''
+>>> a
+'this is the message\nto the Inceptez. \n'
+
+10. Show an examples to use arithmetic, comparison, relational and logical operators.
+
+a = int(input("Enter the first value"))
+b = int(input("Enter the second value"))
+
+#Arithmetic
+
+def arithmetic(a,b):
+    print("This is the addition operation ",(a+b))
+    print("This is the Subtraction operation ", (a - b))
+    print("This is the Multiplication operation ", (a * b))
+    print("This is the power operation ", (a ** b))
+    return
+#Comparison and relational
+
+def comparision(a,b):
+    if a > b:
+        print("A is bigger")
+    elif b > a:
+        print("B is bigger")
+    else:
+        print("A and B are equal")
+    return
+
+
+#Logical
+
+def logical(a,b):
+    if a > b and a >=0:
+        print("A is bigger and positive number")
+    elif b > a and b >=0:
+        print("B is bigger and positive number")
+    elif a <= 0 and b <= 0:
+        print("A and B are negative number")
+    elif a <= 0 or b <= 0:
+        print("Either of A or B are negative number")
+    else:
+        print("A and B are equal")
+    return
+
+arithmetic(a,b)
+comparision(a,b)
+logical(a,b)
+
+Conditional Structures
+11. Write a program to find the greatest of 3 numbers
